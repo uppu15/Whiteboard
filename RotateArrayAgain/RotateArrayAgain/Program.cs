@@ -7,12 +7,9 @@ namespace RotateArrayAgain
         static void Main(string[] args)
         {
             Console.WriteLine("Rotate array using 1 for loop");
-
-            Console.WriteLine(RotateArray("",9));
         }
 
         //Jaiprakash suggested there is a way to rotate string 'n' times using 1 for loop.
-        //I don't think this logic will work using int.
         public static string RotateArray(string input, int n)
         {
             string after = string.Empty;
