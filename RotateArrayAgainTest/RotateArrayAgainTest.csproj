@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RotateArrayAgain\RotateArrayAgain\RotateArrayAgain.csproj" />
     <ProjectReference Include="..\WhiteboardSolution\RotateArrayAgain\RotateArrayAgain\RotateArrayAgain.csproj" />
   </ItemGroup>
 
