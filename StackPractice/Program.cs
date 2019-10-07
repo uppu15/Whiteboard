@@ -11,6 +11,11 @@ namespace StackPractice
             Console.WriteLine(Q());
             Console.WriteLine(q7());
             suddenQ();
+            Console.WriteLine(Q8());
+            Console.WriteLine(Q9());
+            Console.WriteLine(Q10());
+            Console.WriteLine(Q11());
+            queryColon();
         }
 
         //Dan's questions
@@ -51,6 +56,68 @@ namespace StackPractice
             return x;
         }
 
+        static int Q8(int x =5)
+        {
+            int y = 2;
+            if(x > y)
+            {
+                x %= y;
+                Q8(x);
+            }
+
+            return x;
+        }
+
+        static int Q9()
+        {
+            int x = 0;
+            int y = 5;
+
+            for (int i  = y; i  > 0; i --)
+            {
+                x += (i % 2 == 1) ? i : y;
+            }
+            return x;
+        }
+
+        static int Q10()
+        {
+            int x = 0;
+            int y = 3;
+            bool isTrue = true;
+
+            while (!isTrue)
+            {
+                x += ++y;
+                if( x >= 12)
+                {
+                    isTrue = (!false);
+                }
+            }
+            return x;
+        }
+
+        static int Q11()
+        {
+            string string1 = "Mississippi";
+            string string2 = "";
+
+            foreach(var s in string1.Split('i'))
+            {
+                string2 += s;
+            }
+            int x = string2.Length;
+
+            return x;
+        }
+
+        static void queryColon()
+        {
+            bool haveTime = true;
+            string Answer = haveTime ? "yes" : "no";
+
+            Console.WriteLine($"Can we? {Answer}");
+        }
     }
 
     public class PlayWithStack
